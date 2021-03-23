@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src='Alexa-HW-Fortune-Teller\fortune.js'></script>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, veniam earum, nulla similique inventore officia consequatur harum perferendis repellendus, soluta ipsam iste iusto impedit?</p>
+   
+<script>
 
+let userInput= window.prompt('Do you want your fortune, yes or no?');
+userInput = userInput.toLowerCase();
+    fortunes = ['You will be rich', 'You will be broke', 'You will find love', 'You will be lonely'];
+    if (userInput === 'yes') {
+        alert(fortunes[Math.floor(Math.random()*fortunes.length)]);
+    } else {
+       alert("You're no fun!");
+    }
+
+// function fortune (userInput, fortunes) {
+//     userInput = userInput.toLowerCase();
+//     fortunes = ['You will be rich', 'You will be broke', 'You will find love', 'You will be lonely'];
+//     if (userInput === 'yes') {
+//         alert(fortunes[Math.floor(Math.random()*fortunes.length)]);
+//     } else {
+//        alert("You're no fun!");
+//     }
+// };
     
-        
+</script>
+
     
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const careers = ['Developer', 'CEO', 'Artist', 'Bum'];
+const cities = ['Milwaukee', 'Los Angeles', 'New York', 'Slum City'];
+const relationshipStatuses = ['happily married','single','divorced','dead inside'];
+const wealthStatment = ['rich','a garage with books and a lambo','no money, but at least you have your health','no money'];
+
+let career = careers[Math.floor(Math.random(careers)*4)];
+let city = cities[Math.floor(Math.random()*4)];
+let relationshipStatus = relationshipStatuses[Math.floor(Math.random()*4)];
+let wealth = wealthStatment[Math.floor(Math.random()*4)];
+
+let userInput= window.prompt('Do you want your fortune, yes or no?');
+
+userInput = userInput.toLowerCase();
+if (userInput === 'yes') {
+    alert ('You will be a ' + career + ' in ' + city + ' and ' + relationshipStatus + ' and have ' + wealth);
+} else {
+    alert ("You're no fun!");
+};
+
+
+    </script>
+</body>
+</html>
