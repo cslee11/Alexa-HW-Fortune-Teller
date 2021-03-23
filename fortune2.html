@@ -12,12 +12,12 @@
 const careers = ['Developer', 'CEO', 'Artist', 'Bum'];
 const cities = ['Milwaukee', 'Los Angeles', 'New York', 'Slum City'];
 const relationshipStatuses = ['happily married','single','divorced','dead inside'];
-const wealthStatment = ['rich','a garage with books and a lambo','no money, but at least you have your health','no money'];
+const wealthStatment = ['riches','a garage with books and a lambo','no money, but at least you have your health','no money'];
 
-let career = careers[Math.floor(Math.random(careers)*4)];
-let city = cities[Math.floor(Math.random()*4)];
-let relationshipStatus = relationshipStatuses[Math.floor(Math.random()*4)];
-let wealth = wealthStatment[Math.floor(Math.random()*4)];
+let career = careers[Math.floor(Math.random(careers)*careers.length)];
+let city = cities[Math.floor(Math.random()*cities.length)];
+let relationshipStatus = relationshipStatuses[Math.floor(Math.random()*relationshipStatuses.length)];
+let wealth = wealthStatment[Math.floor(Math.random()*wealthStatment.length)];
 
 let userInput= window.prompt('Do you want your fortune, yes or no?');
 
